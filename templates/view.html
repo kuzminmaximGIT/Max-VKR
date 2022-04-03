@@ -1,0 +1,19 @@
+<form method=post action="">
+<p><h1 align="center"><b><SPAN STYLE="font-size:22.0pt">Введите параметры</SPAN></b></h1></p>
+<p>Плотность, кг/м3&emsp;&emsp; {{ (form.Field1) }}</p>
+<p>Модуль упругости, ГПа&emsp;&emsp;{{ (form.Field2) }}</p>
+<p>Количество отвердителя, м.%<&emsp;&emsp;{{ (form.Field3) }}</p>
+<p>Содержание эпоксидных групп,%_2&emsp;&emsp;{{ (form.Field4) }}</p>
+<p>Температура вспышки, С_2&emsp;&emsp;{{ (form.Field5) }}</p>
+<p>Поверхностная плотность, г/м2&emsp;&emsp;{{ (form.Field6) }}</p>
+<p>Потребление смолы, г/м2&emsp;&emsp;{{ (form.Field7) }}</p>
+<p>Угол нашивки, град&emsp;&emsp;{{ (form.Field8) }}</p>
+<p>Шаг нашивки&emsp;&emsp;{{ (form.Field9) }}</p>
+<p>Плотность нашивки&emsp;&emsp;{{ (form.Field10) }}</p>
+  <input type=submit value=Расчет>
+{% if Field1 != None %}
+<p><h1 align="center"><i><SPAN STYLE="font-size:14.0pt">Соотношение матрица-наполнитель - {{ s1 }}</SPAN></i></h1></p>
+<p><h1 align="center"><i><SPAN STYLE="font-size:14.0pt">Модуль упругости при растяжении, ГПа - {{ s2 }}</SPAN></i></h1></p>
+<p><h1 align="center"><i><SPAN STYLE="font-size:14.0pt">Прочность при растяжении, МПа - {{ s3 }}</SPAN></i></h1></p>
+{% endif %}
+</form>
